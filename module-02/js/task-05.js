@@ -4,13 +4,13 @@ let str;
 function checkForSpam(str) {
     const strTOLowerCase = str.toLowerCase();
     // console.log(strTOLowerCase);
-    return console.log(`${str}`, (strTOLowerCase.includes('spam') || strTOLowerCase.includes('sale')));
+    return (strTOLowerCase.includes('spam') || strTOLowerCase.includes('sale'));
 }
 str = 'Latest technology news';
-checkForSpam(str);
+console.log(`${str}`, checkForSpam(str));
 str = 'JavaScript weekly newsletter';
-checkForSpam(str);
+console.log(`${str}`, checkForSpam(str));
 str = 'Get best sale offers now!';
-checkForSpam(str);
+console.log(`${str}`, checkForSpam(str));
 str = '[SPAM] How to earn fast money?';
-checkForSpam(str);
+console.log(`${str}`, checkForSpam(str));

@@ -6,13 +6,13 @@ function formatString(string) {
     if (string.length > maxLength) {
         string = string.slice(0, 40) + '...';
     }
-    return console.log(string);
+    return string;
 }
 string = 'Curabitur ligula sapien, tincidunt non.';
-formatString(string);
+console.log(formatString(string));
 string = 'Vestibulum facilisis, purus nec pulvinar iaculis.';
-formatString(string);
+console.log(formatString(string));
 string = 'Curabitur ligula sapien.';
-formatString(string);
+console.log(formatString(string));
 string = 'Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.';
-formatString(string);
+console.log(formatString(string));

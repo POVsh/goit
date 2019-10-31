@@ -12,11 +12,11 @@ function findLongestWord(string) {
         }
 
     }
-    return console.log('longestWord:', longestWord);
+    return longestWord;
 }
 string = 'The quick brown fox jumped over the lazy dog';
-findLongestWord(string);
+console.log('longestWord:', findLongestWord(string));
 string = 'Google do a roll';
-findLongestWord(string);
+console.log('longestWord:', findLongestWord(string));
 string = 'May the force be with you';
-findLongestWord(string);
+console.log('longestWord:', findLongestWord(string));

@@ -6,9 +6,9 @@ function calculateEngravingPrice(massage, pricePerWorld) {
 
     const price = massageArray.length * pricePerWorld;
 
-    return console.log(price);
+    return price;
 }
-calculateEngravingPrice('Proin sociis natoque et magnis parturient montes mus', 10, );
-calculateEngravingPrice('Proin sociis natoque et magnis parturient montes mus', 20, );
-calculateEngravingPrice('Donec orci lectus aliquam est', 40);
-calculateEngravingPrice('Donec orci lectus aliquam est', 20);
+console.log(calculateEngravingPrice('Proin sociis natoque et magnis parturient montes mus', 10, ));
+console.log(calculateEngravingPrice('Proin sociis natoque et magnis parturient montes mus', 20, ));
+console.log(calculateEngravingPrice('Donec orci lectus aliquam est', 40));
+console.log(calculateEngravingPrice('Donec orci lectus aliquam est', 20));

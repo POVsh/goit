@@ -1,19 +1,19 @@
 'use strict';
 let numbers = [];
 let total = 0;
-let newNumber;
+let input;
 do {
-    newNumber = prompt('Введите любое число');
-    if (Number.isNaN(Number(newNumber))) {
+    input = prompt('Введите любое число');
+    if (Number.isNaN(Number(input))) {
         alert('Было введено не число, попробуйте еще раз')
     } else {
-        numbers.push(newNumber);
+        numbers.push(Number(input));
 
     }
-} while (newNumber !== null);
+} while (input !== null);
 
 for (let i = 0; i < numbers.length; i += 1) {
-    total = Number(numbers[i]) + total;
+    total = numbers[i] + total;
 }
 
 alert(`Общая сумма чисел равна ${total}`);
