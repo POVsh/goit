@@ -16,16 +16,16 @@ const inventory = {
 
 const invokeInventoryAction = function (itemName, action) {
     console.log(`Invoking action on ${itemName}`);
-    action.call(inventory, itemName);
+    action.call(this, itemName); 
 };
 
-invokeInventoryAction('Аптечка', inventory.add);
+invokeInventoryAction.call(inventory, 'Аптечка', inventory.add); // В момент вызова функции, this - это объект inventory
 // Invoking action on Аптечка
 // Adding Аптечка to inventory
 
 console.log(inventory.items); // ['Монорельса', 'Фильтр', 'Аптечка']
 
-invokeInventoryAction('Фильтр', inventory.remove);
+invokeInventoryAction.call(inventory, 'Фильтр', inventory.remove);
 // Invoking action on Фильтр
 // Removing Фильтр from inventory
 
